@@ -71,7 +71,7 @@ require_once("funciones.php");
           <a href="faqs.php">FAQ</a>
         </li>
         <li>
-          <a href="misDatos.php"><?php echo isset($_SESSION['nombre']) ? "Mi Perfil" : 'Registrarse' ?></a>
+          <a href="<?php echo isset($_SESSION['nombre'])? 'misDatos.php' : 'registro.php'?>"><?php echo isset($_SESSION['nombre']) ? "Mi Perfil" : 'Registrarse' ?></a>
         </li>
         <li>
           <a href="ingresar.php" id="hover"><?php echo isset($_SESSION["usuario"]) ? $_SESSION["usuario"] : 'Ingresar' ?></a>
@@ -86,8 +86,14 @@ require_once("funciones.php");
               } else {
               echo '<form class="" action="ingresar.php" method="post">
                  <div class="ingreso-arriba-arriba">
-                   <label for="usuario">Usuario</label>
-                   <input type="text" name="email" value="" id="usuario" placeholder="E-mail">
+                   <label for="usuario">Usuario o e-mail</label>
+                   <input type="text" name="email" value="';
+                   if(isset($_COOKIE['email'])) {
+                     echo $_COOKIE['email'];
+                   } else if (isset($email)){
+                     echo $email;
+                   };
+                   echo' " id="usuario" placeholder="usuario">
                    <label for="pass">Contraseña</label>
                    <input type="password" name="password" value="" id="pass" placeholder="Contraseña">
                  </div>

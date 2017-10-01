@@ -14,9 +14,7 @@ if (isset($_SESSION['nombre'])){
 
     //VALIDACION Email
     if (!isset($_POST['email'])){
-      $error['email']= "Completar con el email";
-    } else if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
-      $error['email']= "El email no es válido";
+      $error['email']= "Completar con el email o usuario";
     } else if ($_POST['email']){
       $email= $_POST['email'];
     }
