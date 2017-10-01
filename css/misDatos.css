@@ -26,7 +26,7 @@
    text-align: center;
 }
 .datos form{
-   
+
 }
 .datos label{
    font-size: 20px;
@@ -36,4 +36,10 @@
    border: none;
    font-size: 18px;
    color: rgb(180, 180, 180);
+}
+
+@media (max-width:460px){
+   .datos input{
+      text-align: center;
+   }
 }
