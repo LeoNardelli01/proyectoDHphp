@@ -101,6 +101,7 @@
      margin-left: -20px;
    }
 
+<<<<<<< HEAD
    .parallax-divisor1{
      margin: 0px;
      height: 100vh;
@@ -127,15 +128,29 @@
      background-position: center;
      background-size: cover;
      background-attachment: fixed
+=======
+   .parallax-invierno{
+     margin: 0px;
+     height: 100vh;
+     width: 100%;
+     background-image: url("../images/parallax5.jpg");
+     background-position: top;
+     background-size: cover;
+     background-attachment: fixed;
+>>>>>>> aacafecb01d835633ee47636da6e2f8ca88083da
    }
 
    .parallax-verano{
      margin: 0px;
      height: 100vh;
      width: 100%;
+<<<<<<< HEAD
      background-image: url("../images/verano.jpg");
      background-position: center;
      background-size: cover;
+=======
+     background-color: red;
+>>>>>>> aacafecb01d835633ee47636da6e2f8ca88083da
    }
 
 /* NOTE: Responsive Tablets */
