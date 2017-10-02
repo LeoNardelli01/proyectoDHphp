@@ -159,7 +159,7 @@ function iniciarSession($datos)
 
 
 
-function enviarEmailBienvenida($data){
+function enviarEmailBienvenida(){
    /*funcion sin terminar!!!
    la idea es que cuando alguien se registre, se le envie un email de bienvenida al sitio
    errores hasta ahora:
@@ -169,10 +169,12 @@ function enviarEmailBienvenida($data){
          ver como enviar una plantilla html (foto, logo, descripcion, agradecimiento)
 
    */
-   $destinatario = $data['email'];
-   $usuario = $data['nombre'];
-   $tema = "Bienvenido $usuario";
-   $mensaje = abrirArchivo('mail.php');
+   $destinatario = "{$_POST['email']}";
+   $nombre = $_POST['nombre'];
+   $usuario = $_POST['usuario'];
+   $tema = "Bienvenido $nombre";
+   //$mensaje = abrirArchivo('mail.php');
+   $mensaje = "$nombre, muchas gracias por registrarte! Tu nombre de usuario es $usuario.";
 
    $encabezado = "From: Hugo Sajama";
 

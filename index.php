@@ -33,24 +33,10 @@ session_start() ?>
           <img src="images/nieve.png" alt="">
           <p>Liquidación de INVIERNO</p>
         </div>
-       
-
-           </div>
-            <div class="secciones">
-              <section class="categorias">
-                <h2>CATEGORIAS</h2>
-                <ul>
-                  <li>Hombre</li>
-                  <li>Mujer</li>
-                </ul>
-                <h2>TEMPORADAS</h2>
-                <ul>
-                  <li>OTOÑO - INVIERNO</li>
-                  <li>PRIMAVERA - VERANO</li>
-                </ul>
+        <div class="parallax-primavera">
 
 
-              </section>
+        </div>
 
               <section class="ofertas">
                 <h2>PRODUCTOS EN OFERTA</h2>
@@ -86,6 +72,16 @@ session_start() ?>
                 </div>
 
               </section>
+              <div class="parallax-divisor1">
+              </div>
+              <div class="parallax-invierno">
+              </div>
+              <div class="parallax-divisor2">
+              </div>
+              <div class="parallax-verano">
+
+              </div>
+
               <!--<section class="medios-pagos">
                  <div class="img-pagos">
                     <img src="images/mercadopago.png" alt="Mercado Pago" id="mercadopago">
@@ -94,13 +90,13 @@ session_start() ?>
                     <img src="images/visa.png" alt="Visa">
                  </div>
               </section> -->
+        </div><!-- NOTE: end container -->
 
-           </div>
-                                    <!-- NOTE: FOOTER  -->
+              <!-- NOTE: FOOTER  -->
 
          <?php include('footer.php') ?>
 
-      </div><!-- NOTE: end container -->
+
 
    </body>
 </html>
