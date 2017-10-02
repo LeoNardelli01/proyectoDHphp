@@ -72,7 +72,6 @@ session_start() ?>
                 </div>
 
               </section>
-<<<<<<< HEAD
               <div class="parallax-divisor1">
               </div>
               <div class="parallax-invierno">
@@ -81,14 +80,6 @@ session_start() ?>
               </div>
               <div class="parallax-verano">
 
-=======
-              <div class="parallax-invierno">
-
-
-              </div>
-              <div class="parallax-verano">
-                
->>>>>>> aacafecb01d835633ee47636da6e2f8ca88083da
               </div>
 
               <!--<section class="medios-pagos">
