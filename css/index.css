@@ -55,6 +55,7 @@
      background-position: center;
      background-size: cover;
      background-attachment: fixed;
+     position: relative;
    }
 
    section {
@@ -118,6 +119,17 @@
      background-image: url("../images/invierno1.jpg");
      background-position: right;
      background-size: cover;
+     position: relative;
+   }
+   .parallax-invierno img{
+     width: 27%;
+     position: absolute;
+     top: 23%;
+     left: 10%;
+     transition: width 0.5s;
+   }
+   .parallax-invierno img:hover{
+     width: 27.5%;
    }
    .parallax-divisor2{
      margin: 0px;
@@ -136,6 +148,82 @@
      background-image: url("../images/verano.jpg");
      background-position: center;
      background-size: cover;
+     position: relative;
+   }
+   .parallax-verano img{
+     width: 22%;
+     position: relative;
+     margin: 0 auto;
+     top: 67%;
+     left: 50%;
+     transform: translateX(-50%);
+     transition: width 0.5s;
+   }
+   .parallax-verano img:hover{
+     width: 22.5%;
+   }
+
+   .parallax-divisor3{
+     margin: 0px;
+     height: 100vh;
+     width: 100%;
+     background-image: url("../images/parallax8.jpeg");
+     background-position: center;
+     background-size: cover;
+     background-attachment: fixed
+   }
+
+   .parallax-hombres {
+     margin: 0px;
+     height: 100vh;
+     width: 100%;
+     background-image: url("../images/hombre.jpg");
+     background-position: top;
+     background-size: cover;
+     position: relative;
+   }
+   .parallax-hombres img{
+     width: 27%;
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     left: 15%;
+     transition: width 0.5s;
+   }
+   .parallax-hombres img:hover {
+     width: 27.5%;
+   }
+
+   .parallax-divisor4 {
+     margin: 0px;
+     height: 100vh;
+     width: 100%;
+     background-image: url("../images/parallax9.jpg");
+     background-position: center;
+     background-size: cover;
+     background-attachment: fixed
+   }
+
+   .parallax-mujeres {
+     margin: 0px;
+     height: 100vh;
+     width: 100%;
+     background-image: url("../images/parallax2.jpg");
+     background-position: top;
+     background-size: cover;
+     position: relative;
+   }
+
+   .parallax-mujeres img{
+     width: 31%;
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     left: 13%;
+     transition: width 0.5s;
+   }
+   .parallax-mujeres img:hover{
+     width: 31.5%;
    }
 
 /* NOTE: Responsive Tablets */
@@ -149,7 +237,7 @@
      width: 100%;
      background-image: url("../images/banner.jpg");
      height: 400px;
-     background-size: 100% 80%;
+     background-size: 100% 85%;
      background-repeat: no-repeat;
      background-position-y: 60px;
    }
@@ -184,8 +272,21 @@
    section.ofertas{
       width: 100%;
       height: 100%;
-      margin-top: 70px;
+      margin-top: 3px;
    }
+}
+
+@media (max-width:604px){
+  .parallax-primavera {
+    background-image: url("../images/primaveramobile.jpg");
+  }
+  .parallax-invierno img{
+    top: 50%;
+    left: 60%;
+  }
+  .parallax-divisor3 {
+    background-image: url("../images/parallax8mobile.jpg");
+  }
 }
 
 /* NOTE: Responsive Mobile */

@@ -35,7 +35,6 @@ session_start() ?>
         </div>
         <div class="parallax-primavera">
 
-
         </div>
 
               <section class="ofertas">
@@ -75,12 +74,24 @@ session_start() ?>
               <div class="parallax-divisor1">
               </div>
               <div class="parallax-invierno">
+                <a href="#"><img src="images/inviernocartel.png" alt=""></a>
               </div>
               <div class="parallax-divisor2">
               </div>
               <div class="parallax-verano">
-
+                <a href="#"><img src="images/vermas.png" alt=""></a>
               </div>
+              <div class="parallax-divisor3">
+              </div>
+              <div class="parallax-hombres">
+                <a href="#"><img src="images/hombrecartel.png" alt=""></a>
+              </div>
+              <div class="parallax-divisor4">
+              </div>
+              <div class="parallax-mujeres">
+                <img src="images/mujerescartel.png" alt="">
+              </div>
+
 
               <!--<section class="medios-pagos">
                  <div class="img-pagos">
