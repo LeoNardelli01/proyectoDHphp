@@ -1,8 +1,6 @@
 
 <!--
 Este div es el flotante de las redes sociales.
-no se por que nos e ven los iconos, pero cre que se puede arreglar, cuando el archivo es
-.html se ve bien, cuando lo paso a .php se ve mal (?)
 -->
 <div class="social">
    <ul>
@@ -17,11 +15,7 @@ no se por que nos e ven los iconos, pero cre que se puede arreglar, cuando el ar
 
               <!-- NOTE: footer -->
 
-<!--
-Se desorganizo el footer cuando lo pase a .php, preguntar por que puede ser
-- se podria poner un newsletter
--
--->
+
 <footer>
    <div class="footer-wrapper">
       <div class="contenido">

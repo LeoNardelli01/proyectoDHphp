@@ -207,7 +207,7 @@ nav li a:hover {
     width:50%;
     position: absolute;
     right: -100%;
-    top: 45px;
+    top: 60px;
   }
   nav ul  {
     display: flex;
@@ -280,7 +280,7 @@ nav li a:hover {
   }
   #menu:checked ~ nav {
     transition: 1s;
-    top: 45px;
+    top: 60px;
   }
   nav {
 

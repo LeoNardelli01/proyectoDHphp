@@ -81,8 +81,8 @@ if (isset($_POST['btn-crearcuenta'])){
     <br>
     <div class="contenedor">
       <section class="formulario">
-        <h1>Complete los siguientes datos para crearse una cuenta.</h1>
         <form class="registro" action="registro.php" method="post" enctype="multipart/form-data">
+          <h1>Complete los siguientes datos para crearse una cuenta.</h1>
           <input type="text" name="usuario" value="" placeholder="Usuario">
           <div class="arriba">
 
@@ -143,7 +143,7 @@ if (isset($_POST['btn-crearcuenta'])){
           </span>
 
           <h3>Imagen de perfil</h3>
-          <input type="file" name="avatar" value="">
+          <input type="file" name="avatar" class="avatar">
 
           <div class="aceptar">
             <div class="izquierda">

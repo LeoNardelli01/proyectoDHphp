@@ -92,15 +92,6 @@ session_start() ?>
                 <img src="images/mujerescartel.png" alt="">
               </div>
 
-
-              <!--<section class="medios-pagos">
-                 <div class="img-pagos">
-                    <img src="images/mercadopago.png" alt="Mercado Pago" id="mercadopago">
-                    <img src="images/paypal.png" alt="Paypal">
-                    <img src="images/mastercard.png" alt="Mastercard">
-                    <img src="images/visa.png" alt="Visa">
-                 </div>
-              </section> -->
         </div><!-- NOTE: end container -->
 
               <!-- NOTE: FOOTER  -->

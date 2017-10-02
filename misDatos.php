@@ -42,11 +42,22 @@ if (!isset($_SESSION['nombre'])){
             <div class="datos">
                <form class="" action="" method="post">
                   <label for="">Nombre: </label>
-                  <input type="text" name="" value="<?php echo $_SESSION['nombre']?>" readonly><br>
+                  <input class="<?php echo isset($_POST['modificar']) ? "modificarDatos" : ""?>"type="text" name="" value="<?php echo $_SESSION['nombre']?>" <?php echo isset($_POST['modificar']) ? "" : "readonly"?>><br>
                   <label for="">Apellido:</label>
-                  <input type="text" name="" value="<?php echo $_SESSION['apellido']?>" readonly><br>
+                  <input class="<?php echo isset($_POST['modificar']) ? "modificarDatos" : ""?>" type="text" name="" value="<?php echo $_SESSION['apellido']?>" <?php echo isset($_POST['modificar']) ? "" : "readonly"?>><br>
                   <label for="">Email:</label>
-                  <input type="text" name="" value="<?php echo $_SESSION['email']?>" readonly><br>
+                  <input class="<?php echo isset($_POST['modificar']) ? "modificarDatos" : ""?>" type="text" name="" value="<?php echo $_SESSION['email']?>" <?php echo isset($_POST['modificar']) ? "" : "readonly"?>><br>
+
+                  <input class="btn-modificar" type="submit" name="modificar" value="MODIFICAR">
+
+                  <?php
+                  if(isset($_POST['modificar'])){
+                     echo "<input class='btn-modificar' type='submit' name='guardar' value='GUARDAR'>";
+                  }
+                  ?>
+               <!--   <label for="botonModificar">Modificar datos</label>
+                  <input type="checkbox" id="botonModificar" name="" value="">
+                  <input type="submit" name="modificar" value="Guardar"> -->
 
                </form>
             </div>
