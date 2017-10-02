@@ -2,7 +2,7 @@
 session_start();
 
 if (isset($_SESSION['nombre'])){
-  header ("location: index.php");
+  header ("location:index.php");
 }
 
  require_once('funciones.php');
@@ -40,6 +40,7 @@ if (isset($_POST['btn-crearcuenta'])){
          file_put_contents('usuarios.json', $usuarioJson."\n", FILE_APPEND);
          fclose($archivo);
             //enviarEmailBienvenida($usuario); // por ahora no funciona, preguntar por que
+         enviarEmailBienvenida();
 
             //iniciarSession($usuario);
             header('location:ingresar.php');

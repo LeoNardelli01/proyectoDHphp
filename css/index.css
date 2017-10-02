@@ -16,18 +16,14 @@
    .banner{
      width: 100%;
      height: auto;
-     max-height: 95vh;
+     max-height: 100vh;
      overflow: hidden;
      position: relative;
    }
 
    .banner video{
       width: 100vw;
-      position: relative;
-      z-index: 0;
-      /*margin-bottom: 50px;*/
-
-   }
+     }
 
    .banner p{
      font-size: 55px;
@@ -51,81 +47,45 @@
      display: none;
    }
 
-   .secciones{
+   .parallax-primavera{
+     margin: 0px;
+     height: 100vh;
+     width: 100%;
+     background-image: url("../images/primavera1.jpg");
+     background-position: center;
+     background-size: cover;
+     background-attachment: fixed;
+   }
+
+   section {
      overflow: hidden;
-   }
-   .secciones section{
-     float: left;
-   }
-   .secciones .categorias{
-        width: 15%;
-     background: -webkit-linear-gradient(#B9A88E, white 98%);
-     background: -o-linear-gradient(#B9A88E, white 98%);
-     background: linear-gradient(#B9A88E, white 98%);
-     color: #121D33;
-     height: 900px;
-   }
-   .secciones .categorias h2{
-     margin-left: 8%;
-     font-size: 14px;
-     padding-top: 40px;
-     transition: 0.3s;
-
-   }
-   .secciones .categorias h3{
-     margin-left: 8%;
-     font-size: 18px;
-   }
-
-   .secciones .categorias h2:hover{
-      color: #B9A88E;
-   }
-
-   .secciones .categorias ul li{
-     font-size: 20px;
-     list-style: none;
-     transition: 0.3s;
-     padding-bottom: 15px;
-     padding-top: 10px;
-   }
-
-   .secciones .categorias ul li:hover{
-      position: relative;
-      color: black;
-   }
-
-   .secciones .ofertas{
-        width: 85%;
+     width: 85%;
      background: -webkit-linear-gradient(#F8F8F8, white);
      background: -o-linear-gradient(#F8F8F8, white);
      background: linear-gradient(#F8F8F8, white);
-     overflow: hidden;
      text-align: center;
      color: #121D33;
      height: 1100px;
-
    }
-   .secciones .ofertas .prod-oferta{
+   .ofertas .prod-oferta{
      float: left;
      width: 20%;
      position: relative;
      margin: 1.66%;
    }
-   .secciones .ofertas .prod-oferta p{
+   .ofertas .prod-oferta p{
      margin-top: 0px;
    }
-   .secciones .ofertas .prod-oferta img{
+   .ofertas .prod-oferta img{
      width: 100%;
      border-radius: 20%;
      transition: 0.5s;
    }
 
-   .secciones .ofertas .prod-oferta img:hover{
+   .ofertas .prod-oferta img:hover{
       transform: scale(1.03,1.03);
-
-
    }
-   .secciones .ofertas .prod-oferta button {
+  .ofertas .prod-oferta button {
     left: 50%;
     transform: translateX(0%);
     border: 1px solid;
@@ -135,28 +95,28 @@
     background-color: #B9A88E;
     }
 
-   .secciones .mas-vendidos{
-     width: 20%;
-     background-color: #B9A88E;
-     height: 800px;
-     color: #121D33;
-   }
-   .secciones  h2{
+    .secciones  h2{
      margin-left: 8%;
      font-size: 31px;
      margin-left: -20px;
    }
 
-
-   .secciones .art-mas-vendido{
-     width: 84%;
-     margin-left: 8%;
-   }
-   .secciones .art-mas-vendido img{
+   .parallax-invierno{
+     margin: 0px;
+     height: 100vh;
      width: 100%;
+     background-image: url("../images/parallax5.jpg");
+     background-position: top;
+     background-size: cover;
+     background-attachment: fixed;
    }
 
-
+   .parallax-verano{
+     margin: 0px;
+     height: 100vh;
+     width: 100%;
+     background-color: red;
+   }
 
 /* NOTE: Responsive Tablets */
 
@@ -179,23 +139,20 @@
    div.banner{
       display: none;
    }
-   .secciones .categorias{
-      display: none;
-   }
-   div.secciones{
+
+   .ofertas{
       margin-top: -105px;
    }
-   .secciones .ofertas .prod-oferta {
+  .ofertas .prod-oferta {
       float: left;
       width: 30%;
       position: relative;
       margin: 1.66%;
-
    }
-   .secciones .ofertas .prod-oferta p{
+  .ofertas .prod-oferta p{
       display: none;
    }
-   .secciones .ofertas .prod-oferta button {
+  .ofertas .prod-oferta button {
       left: 50%;
       transform: translateX(0%);
       border: 1px solid;
@@ -204,16 +161,11 @@
       font-size: 18px;
       width: 70%;
     }
-   div.secciones section.ofertas{
+   section.ofertas{
       width: 100%;
       height: 100%;
       margin-top: 70px;
    }
-
-
-
-
-
 }
 
 /* NOTE: Responsive Mobile */
@@ -259,31 +211,29 @@
      top: 222px;
      border: 2px solid
    }
-   div.secciones{
-      margin-top: -105px;
-      overflow: hidden;
-   }
+
    div.secciones section.ofertas{
       width: 100%;
       height: 100%;
       margin-top: 70px;
+      margin-top: -105px;
+      overflow: hidden;
    }
 
-
-   .secciones .ofertas .prod-oferta{
+   .ofertas .prod-oferta{
       float: none;
       width: 100%;
       position: relative;
       margin: 1.66%;
       overflow: hidden;
    }
-   .secciones .ofertas .prod-oferta p{
+   .ofertas .prod-oferta p{
       display: none;
    }
-   .secciones .ofertas .prod-oferta img{
+    .ofertas .prod-oferta img{
       margin-bottom: 20px;
    }
-   .secciones .ofertas .prod-oferta button {
+   .ofertas .prod-oferta button {
     left: 50%;
     transform: translateX(0%);
     border: 1px solid;
@@ -291,10 +241,9 @@
     padding: 10px;
     font-size: 18px;
     }
-    .secciones h2 {
+    ofertas h2 {
     margin: 0px;
     font-size: 30px;
-
     width: 100%;
 }
 
