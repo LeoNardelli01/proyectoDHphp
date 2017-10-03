@@ -11,6 +11,7 @@ session_start() ?>
       <link rel="stylesheet" href="css/footer.css">
       <link href="https://fonts.googleapis.com/css?family=EB+Garamond|News+Cycle" rel="stylesheet">
       <link rel="stylesheet" href="css/index.css">
+      <link rel="stylesheet" href="css/animate.css">
       <title>Sale de invierno</title>
       <script src="https://use.fontawesome.com/bb1fbcebba.js"></script>
 
@@ -27,7 +28,7 @@ session_start() ?>
           <video autoplay loop muted preload="auto">
             <source src="videos/secuencia.mp4" type="video/mp4">
           </video>
-          <p>Liquidación de INVIERNO</p>
+          <p class="animated fadeInUp">Liquidación de INVIERNO</p>
         </div>
         <div class="banner-cel">
           <img src="images/nieve.png" alt="">
@@ -40,7 +41,7 @@ session_start() ?>
               <section class="ofertas">
                 <h2>PRODUCTOS EN OFERTA</h2>
                 <div class="prod-oferta">
-                  <img src="images/foto1.png" alt="">
+                  <img  src="images/foto1.png" alt="">
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laborlaborum.</p>
                   <button type="button" name="button">COMPRAR</button>
                 </div>
@@ -74,7 +75,7 @@ session_start() ?>
               <div class="parallax-divisor1">
               </div>
               <div class="parallax-invierno">
-                <a href="#"><img src="images/inviernocartel.png" alt=""></a>
+                <a class="animated fadeIn" href="#"><img src="images/inviernocartel.png" alt=""></a>
               </div>
               <div class="parallax-divisor2">
               </div>

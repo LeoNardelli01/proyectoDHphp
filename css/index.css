@@ -124,7 +124,8 @@
    .parallax-invierno img{
      width: 27%;
      position: absolute;
-     top: 23%;
+     top: 50%;
+     transform: translateY(-50%);
      left: 10%;
      transition: width 0.5s;
    }
@@ -199,7 +200,7 @@
      height: 100vh;
      width: 100%;
      background-image: url("../images/parallax9.jpg");
-     background-position: top;
+     background-position: top right;
      background-size: cover;
      background-attachment: fixed
    }
@@ -274,6 +275,19 @@
       height: 100%;
       margin-top: 3px;
    }
+}
+
+@media (orientation: portrait){
+  .parallax-primavera {
+    background-image: url("../images/primaveramobile.jpg");
+  }
+  .parallax-invierno img{
+    top: 50%;
+    left: 60%;
+  }
+  .parallax-divisor3 {
+    background-image: url("../images/parallax8mobile.jpg");
+  }
 }
 
 @media (max-width:604px){

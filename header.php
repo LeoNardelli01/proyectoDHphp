@@ -37,7 +37,7 @@ require_once("funciones.php");
 <header>
   <div class="izquierda">
     <div class="img-logo">
-      <a href="index.php"><img src="images/hs-logo.png" alt=""></a>
+      <a class="animated fadeInUp" href="index.php"><img src="images/hs-logo.png" alt=""></a>
     </div>
 
     <form class="buscador" action="index.html" method="post">
